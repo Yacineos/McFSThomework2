@@ -1,21 +1,15 @@
-let arr = [5,7,-99,45,88888] ;
-function removeSpecificElement(arr,x){
-    var trouve = false , i=0  ;
-
-    while(trouve == false && i<arr.length){
-        if(x == i){
-            trouve = true ;
-            
-            for(var j = i ;j<arr.length - 1; j++){
-                arr[j]=arr[j+1];
-            }
-            arr.length--;
-        }
-    }
-    return arr
+var Lynda_MC_victim={
+    Name:"OUKKAL",
+    Surname:"Yacine",
+    Matricule:'0557800969',
+    FullName:function(){
+        return "My fullname is "+this.Name+" "+this.Surname;
+    },
+    Level: 9 ,
+    Hobbies:['CSGO','Coding','Politics','Handball','Camping','Netflix&Chill'],
+    Skills:['C','DataStructures','Java']
 }
 
-
-removeSpecificElement(arr,2);
-console.log(arr.toString());
-
+console.log(Lynda_MC_victim.FullName());
+console.log(Lynda_MC_victim.Hobbies);
+console.log(Lynda_MC_victim.Skills);
